@@ -1,0 +1,72 @@
+.getbowtied-single-product-share-wrapper
+{
+	font-size: rem-calc(12); 
+	text-align: center;
+	display: flex;
+	justify-content: space-between; 
+	margin: 0  auto rem-calc(32);
+		 
+	@include breakpoint(small only)
+	{
+		margin-left: -20px;
+		margin-right: -20px;
+		margin-bottom: rem-calc(16); 
+	}
+
+	@include breakpoint(medium only)
+	{
+		margin-left: -24px;
+		margin-right: -24px;
+		margin-bottom: rem-calc(16); 
+	}
+	
+	@include breakpoint(large)
+	{
+		float: right;
+		align-items: center;
+		margin: 0  0 rem-calc(48);
+		margin-top: -2px; 
+	}
+	
+	.getbowtied-single-product-share
+	{
+		margin-right: rem-calc(16);
+		display: none;
+		
+		@include breakpoint(large)
+		{
+			display: inline-block;
+		} 
+	}
+
+	a
+	{		
+		@include breakpoint(medium down)
+		{
+			width: calc(100% / 3);
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-right: 1px solid;
+			padding: rem-calc(18) 0 rem-calc(16) 0; 
+
+			&:last-child
+			{
+				border-right: none; 
+			}   
+		}
+		
+		&:last-child
+		{
+			span
+			{
+				margin-right: 0;
+			}
+		}
+		
+		span
+		{
+			font-size: rem-calc(16); 
+			margin-right: rem-calc(12);
+		}
+	}
+}

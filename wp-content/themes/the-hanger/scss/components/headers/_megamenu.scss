@@ -1,0 +1,51 @@
+.header-megamenu-placeholder
+{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 100%;
+
+	@each $breakpoint, $padding in $content-padding
+	{
+		@include breakpoint($breakpoint) {
+			padding: 0 rem-calc($padding) !important;
+		}
+	}
+
+	@include large_side_paddings(true);
+}
+
+.gbt-mega-menu-content
+{
+	position: relative;
+	width: 100% !important;
+	height: 100%;
+	left: 0 !important;
+	top: 100% !important;
+	padding: 0;
+	@include dropdowns_shadow();
+		
+	@import 'megamenu_categories_list';
+	@import 'megamenu_posts_list';
+	@import 'megamenu_icons_list';
+	@import 'megamenu_contact';
+}
+
+/*.gbt-mega-dropdown-wrapper .gbt-mega-dropdown .gbt-mega-dropdown-content {
+    height: auto;
+    overflow: visible;
+    visibility: visible;
+}
+
+.gbt-mega-dropdown-wrapper .gbt-mega-dropdown-content .gbt-mega-dropdown-content-inside
+{
+	opacity: 1;
+}*/
+
+/*#primary-panel-3407
+{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	transform: perspective(9999px) rotateX(0);
+}*/

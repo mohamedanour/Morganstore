@@ -1,0 +1,24 @@
+.share-bar-container
+{
+	margin: 0 rem-calc(-4);
+}
+
+.share-bar
+{
+	list-style: none;
+	margin: ($global-font-size * 2) 0;
+	@include flex-grid-row( $gutters: 8 );
+
+	&__item
+	{
+		@include flex-grid-column( $columns: 6, $gutters: 8 );
+	}
+
+	&__link
+	{
+		display: block;
+		text-align: center;
+		padding: rem-calc(24);
+		text-transform: uppercase;
+	}
+}
