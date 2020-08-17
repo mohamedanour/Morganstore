@@ -8,6 +8,15 @@
 	    $page_title_option = "on";
 	}
 ?>
+<?php 
+
+function my_billing_postcode( $address_fields ) {
+  $address_fields['postcode']['required'] = false;
+  return $address_fields;
+}
+add_filter( 'woocommerce_default_address_fields', 'my_billing_postcode' );
+
+?>
 
 <?php if ( "on" == $page_title_option ) : ?>
 
@@ -176,5 +185,6 @@
 
 	</div>
 </div>
+
 
 <?php get_footer();

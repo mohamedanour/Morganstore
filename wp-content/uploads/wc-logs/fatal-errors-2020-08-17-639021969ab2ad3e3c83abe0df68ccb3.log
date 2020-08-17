@@ -1,0 +1,13 @@
+2020-08-17T08:59:05+00:00 CRITICAL Uncaught Error: Call to undefined function getbowtied_hex2rgb() in C:\xampp\htdocs\morganstore\wp-content\plugins\the-hanger-extender\includes\shortcodes\wp\slider.php:96
+Stack trace:
+#0 C:\xampp\htdocs\morganstore\wp-includes\shortcodes.php(343): getbowtied_image_slide(Array, '', 'image_slide')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\morganstore\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(image_...', 'do_shortcode_ta...', '[image_slide ti...')
+#3 C:\xampp\htdocs\morganstore\wp-content\plugins\the-hanger-extender\includes\shortcodes\wp\slider.php(36): do_shortcode('[image_slide ti...')
+#4 C:\xampp\htdocs\morganstore\wp-includes\shortcodes.php(343): getbowtied_slider(Array, '[image_slide ti...', 'slider')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\xampp\htdocs\morganstore\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(slider...', 'do_shortcode_ta...', '[slider custom_...')
+#7 C:\xampp\htdocs\morganstore\wp-content\plugins\js_compo in C:\xampp\htdocs\morganstore\wp-content\plugins\the-hanger-extender\includes\shortcodes\wp\slider.php on line 96
+
+2020-08-17T09:26:56+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\morganstore\wp-admin\includes\class-wp-filesystem-direct.php on line 82
+
